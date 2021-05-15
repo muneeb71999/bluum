@@ -1,0 +1,426 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Inclucdes
+@import "./variables";
+@import "./sections";
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-priamry;
+  font-weight: 400;
+  color: $text-color-primary;
+  background-color: $body-color-bg;
+}
+
+.copyright-text {
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+.main-heading {
+  font-family: $font-secondary;
+  font-size: 72px;
+  text-align: center;
+  margin-bottom: 39px;
+
+  @media screen and (max-width: $screen-768) {
+    font-size: 5rem;
+  }
+
+  @media screen and (max-width: $screen-360) {
+    font-size: 4rem;
+  }
+}
+
+.heading-secondary {
+  font-family: $font-secondary;
+  font-size: 3.6rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $screen-768) {
+    font-size: 2.8rem;
+  }
+
+  @media screen and (max-width: $screen-360) {
+    font-size: 2rem;
+  }
+}
+
+.heading-tertiary {
+  font-size: 3.6rem;
+  font-family: $font-secondary;
+  margin-bottom: 1.8rem;
+  text-align: center;
+
+  @media screen and (max-width: $screen-768) {
+    font-size: 2.8rem;
+  }
+
+  @media screen and (max-width: $screen-360) {
+    font-size: 2rem;
+  }
+}
+
+.main-heading-two {
+  font-size: 4.8rem;
+  font-family: $font-secondary;
+  padding: 6rem 0;
+
+  @media screen and (max-width: $screen-768) {
+    font-size: 3.4rem;
+  }
+
+  @media screen and (max-width: $screen-360) {
+    font-size: 2.8rem;
+  }
+}
+
+.text-secondary {
+  font-size: 3.6rem;
+  font-family: $font-priamry;
+  width: 70%;
+  margin: 0 auto;
+
+  @media screen and (max-width: $screen-768) {
+    font-size: 2.8rem;
+  }
+
+  @media screen and (max-width: $screen-360) {
+    font-size: 2rem;
+  }
+}
+
+.mb-58 {
+  margin-bottom: 5.8rem;
+}
+
+.mt-58 {
+  margin-top: 5.8rem;
+}
+
+.mt-70 {
+  margin-top: 7rem;
+}
+
+.mt-100 {
+  margin-top: 10rem;
+}
+
+.mt-20 {
+  margin-top: 2rem;
+}
+
+.mt-40 {
+  margin-top: 4rem;
+}
+
+.mt-200 {
+  margin-top: 20rem;
+}
+
+.second-image {
+  margin-top: 20px;
+}
+
+.text-primary {
+  font-size: 36px;
+  @media screen and (max-width: $screen-768) {
+    font-size: 2.8rem;
+  }
+
+  @media screen and (max-width: $screen-360) {
+    font-size: 2rem;
+  }
+}
+
+.my-role {
+  margin-top: 100px;
+  margin-bottom: 99px;
+
+  @media screen and (max-width: $screen-360) {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.phone-img {
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.list {
+  &-primary {
+    // margin: 3rem 0;
+    padding: 2rem 0rem 2rem 4rem;
+    & li {
+      font-size: 3.6rem;
+      line-height: 43.2px;
+      margin: 4rem 0;
+      @media screen and (max-width: $screen-768) {
+        font-size: 2.8rem;
+      }
+
+      @media screen and (max-width: $screen-360) {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+
+  &-secondary {
+    // margin: 3rem 0;
+    padding: 2rem 0rem 2rem 4rem;
+    & li {
+      font-size: 3.6rem;
+      line-height: 43.2px;
+      @media screen and (max-width: $screen-768) {
+        font-size: 2.8rem;
+      }
+
+      @media screen and (max-width: $screen-360) {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}
+
+.homepage {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+  gap: 4rem;
+
+  @media screen and (max-width: $screen-1100) {
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: $screen-768) {
+    flex-direction: column;
+  }
+}
+
+.sidebar {
+  padding: 1rem 2.7rem;
+  text-align: center;
+  align-self: stretch;
+  min-width: 20rem;
+  max-width: 40rem;
+
+  &-logo {
+    max-width: 20rem !important;
+    // width: 100%;
+  }
+
+  @media screen and (max-width: $screen-768) {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: $screen-360) {
+    flex-direction: column;
+  }
+
+  &-links {
+    margin-top: 2rem;
+    @media screen and (max-width: $screen-768) {
+      flex-grow: 1;
+      margin-left: 2rem;
+      margin-top: 0;
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1.5rem;
+    }
+
+    @media screen and (max-width: $screen-360) {
+      justify-content: center;
+    }
+  }
+
+  &-link {
+    font-family: $font-secondary;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: $text-color-primary;
+    font-size: 3.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1.5rem;
+    transition: all 0.2s ease-in-out;
+
+    @media screen and (max-width: $screen-768) {
+      font-size: 2.4rem;
+      margin: 0;
+    }
+
+    &:hover {
+      text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+// Badges
+.badge {
+  &-primary {
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: $badge-color-bg;
+    padding: 9px 10px;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: $screen-360) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+// Main Content
+.main-content {
+  padding: 6rem 4rem;
+  flex: 1;
+
+  @media screen and (max-width: $screen-1100) {
+    padding: 5rem 3rem;
+  }
+
+  @media screen and (max-width: $screen-768) {
+    padding: 0 3rem;
+  }
+
+  @media screen and (max-width: $screen-360) {
+    padding: 0 1rem;
+  }
+
+  &-secondary {
+    background-color: white;
+    @extend .main-content;
+    padding: 2rem 4rem;
+
+    @media screen and (max-width: $screen-768) {
+      padding: 2rem 3rem;
+    }
+
+    @media screen and (max-width: $screen-360) {
+      padding: 2rem 2rem;
+    }
+  }
+}
+
+// Card
+.card {
+  display: grid;
+  grid-template-columns: 1fr minmax(30rem, 56rem);
+  align-items: center;
+  gap: 3rem;
+  background-color: white;
+  padding: 2.2rem 2.5rem;
+  border-radius: 10px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 7rem;
+  }
+
+  @media screen and (max-width: $screen-1100) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: $screen-360) {
+    padding: 1.4rem;
+  }
+
+  &-left {
+    text-align: center;
+  }
+
+  &-right {
+  }
+
+  &-img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &-heading {
+    font-size: 6.4rem;
+    font-family: $font-secondary;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: $screen-768) {
+      font-size: 4.4rem;
+    }
+  }
+
+  &-badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 2.8rem;
+
+    @media screen and (max-width: $screen-360) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &-desc {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+
+    @media screen and (max-width: $screen-360) {
+      width: 100%;
+      font-size: 1.8rem;
+    }
+  }
+
+  &-btn {
+    padding: 11px 5px;
+    font-size: 3rem;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background: #2d4059;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    display: inline-block;
+
+    @media screen and (max-width: $screen-360) {
+      font-size: 2rem;
+      width: 100%;
+    }
+  }
+}

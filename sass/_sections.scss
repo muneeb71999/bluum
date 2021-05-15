@@ -1,0 +1,91 @@
+.section {
+  &-one {
+    padding-top: 8rem;
+
+    &-container {
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+
+      @media screen and (max-width: $screen-360) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  &-stage-one {
+    margin-top: 4rem;
+    padding: 5rem 0;
+
+    @media screen and (max-width: $screen-768) {
+      padding: 3rem 0;
+    }
+
+    @media screen and (max-width: $screen-360) {
+      margin-top: 3rem;
+      padding: 3rem 0;
+    }
+  }
+
+  &-stage-two {
+    margin-top: 8rem;
+    padding: 5rem 0;
+
+    @media screen and (max-width: $screen-768) {
+      margin-top: 5rem;
+      padding: 3rem 0;
+    }
+
+    @media screen and (max-width: $screen-360) {
+      margin-top: 3rem;
+      padding: 3rem 0;
+    }
+  }
+
+  &-stage-three {
+    margin-top: 8rem;
+    padding: 5rem 0;
+
+    @media screen and (max-width: $screen-768) {
+      margin-top: 5rem;
+      padding: 3rem 0;
+    }
+
+    @media screen and (max-width: $screen-360) {
+      margin-top: 3rem;
+      padding: 3rem 0;
+    }
+  }
+
+  &-stage-four {
+    margin-top: 8rem;
+    padding: 5rem 0;
+
+    @media screen and (max-width: $screen-768) {
+      margin-top: 5rem;
+      padding: 3rem 0;
+    }
+
+    @media screen and (max-width: $screen-360) {
+      margin-top: 3rem;
+      padding: 3rem 0;
+    }
+
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+      gap: 8rem;
+      margin-top: 10rem;
+
+      @media screen and (max-width: $screen-1100) {
+        gap: 3rem;
+      }
+
+      @media screen and (max-width: $screen-360) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

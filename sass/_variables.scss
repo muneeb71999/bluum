@@ -1,0 +1,17 @@
+$font-priamry: "Calluna";
+$font-secondary: "Bebas Neue", sans-serif;
+
+$text-color-primary: hsla(0, 0%, 0%, 1);
+$body-color-bg: hsla(0, 0%, 82%, 1);
+
+$btn-color-bg: hsla(214, 33%, 26%, 1);
+$badge-color-bg: hsla(218, 100%, 97%, 1);
+
+@font-face {
+  font-family: Calluna;
+  src: url("../fonts/Calluna.otf") format("opentype");
+}
+
+$screen-1100: 1100px;
+$screen-768: 768px;
+$screen-360: 360px;
